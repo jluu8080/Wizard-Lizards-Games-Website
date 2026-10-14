@@ -6,7 +6,7 @@ Website for B&J³ Games.
 
 The website launches on **October 13th**.
 
-## Status
+## Status (Updated on 10/13/26)
 
 The website is **incomplete**. Remaining work:
 
