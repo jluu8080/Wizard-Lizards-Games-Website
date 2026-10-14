@@ -1,0 +1,50 @@
+.index_heroSection
+{
+    width:100%;
+    min-height:240px;
+    background-color: #005377;
+
+    // margin-top:25px;
+
+    // padding-top:10px;
+    // padding-bottom:15px;
+
+    // border-top:1px solid black;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .logoContainer
+    {
+        margin-bottom:15px;
+
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        // background-color: red;
+        #logoHeader
+        {
+            color: #FFC857 !important;
+        }
+
+        font-weight: bold;
+
+        .gameStudioLogo
+        {
+            width:400px;
+            height:100px;
+        }
+    }
+
+    p
+    {
+        width:70ch;
+
+        color: #fff;
+        font-size: 18px;
+    }
+}

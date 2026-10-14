@@ -1,0 +1,22 @@
+.team_studioSection
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img
+    {
+        width:250px;
+    }
+
+    p
+    {
+        width:100ch;
+    }
+
+    h1
+    {
+        color: #052F5F;
+    }
+}

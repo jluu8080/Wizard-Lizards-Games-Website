@@ -1,0 +1,93 @@
+.team_teamSection
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top:20px;
+    border-top:1px solid black;
+
+    h1
+    {
+        margin-bottom:40px;
+    }
+
+    .teamMembersDiv
+    {
+        width:1000px;
+        margin-bottom:40px;
+
+        // background-color: gray;
+
+        .teamMember
+        {
+            display:flex;
+            padding-top:20px;
+            padding-bottom:20px;
+            border-bottom:1px solid black;
+
+            .tmLeft
+            {
+                width:200px;
+                height:200px;
+
+                margin-right:40px;
+                margin-bottom:10px;
+
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: orange;
+                
+                border-radius: 15px;
+                border:1px solid black;
+            }
+
+            .tmRight
+            {
+                width:600px;
+                // background-color:aquamarine;
+
+                .teamMem_name
+                {
+                    margin:0;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                .role
+                {
+                    margin-top: 5px;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                }
+
+                .memberSocialLinks
+                {
+                    width:100%;
+
+                    margin-top:20px;
+
+                    display:flex;
+                    justify-content: space-between;
+
+                    .link
+                    {
+                        display:flex;
+
+                        .socialLinkImg
+                        {
+                            width:25px;
+                            height:25px;
+                            margin-right: 10px;
+
+                            background-color: orchid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

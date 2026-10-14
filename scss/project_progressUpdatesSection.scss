@@ -1,0 +1,67 @@
+.projectUpdatesSection
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+
+
+    h1
+    {
+        color: #052F5F;
+    }
+
+    .progressUpdatesDiv
+    {
+        display:flex;
+        justify-content: space-between;
+
+        margin-bottom:10px;
+
+        .progressUpdateCard
+        {
+
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            width:300px;
+            // background-color:aquamarine;
+
+            .progressUpdateImg
+            {
+                width:300px;
+                height:150px;
+
+                //Just for the image text
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 5px;
+
+                background-color: lightgreen;
+            }
+
+            .progressUpdateContent
+            {
+                width:295px;
+
+                .progressUpdateDate
+                {
+                    margin:0;
+                    margin-bottom:2px;
+                    margin-top:10px;
+
+                    color: #005377;
+                }
+
+                h3
+                {
+                    color: #052F5F;
+                }
+            }
+        }
+    }
+}

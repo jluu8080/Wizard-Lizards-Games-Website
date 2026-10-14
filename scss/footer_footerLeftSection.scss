@@ -1,0 +1,25 @@
+.footerLeftSection
+{
+
+    // background-color: red;
+    width:50%;
+    // height:100%;
+
+    display: flex;
+    align-items: center;
+
+    .footer_studioLogo
+    {
+        width: 250px;
+        height: 150px;
+        // background-color: blue;
+
+        background-image: url("../images/studioLogo1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+    }
+
+
+}

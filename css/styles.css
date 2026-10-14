@@ -1,0 +1,775 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ben_bColor {
+  background-color: #052F5F;
+}
+
+.ben_textColor {
+  color: #052F5F;
+}
+
+.jacob_textColor {
+  color: #005377;
+}
+
+.julian_textColor {
+  color: #06A77D;
+}
+
+.julian_bColor {
+  background-color: #06A77D;
+}
+
+.jason_textColor {
+  color: #F1A208;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  font-size: 18px;
+}
+.header a:hover {
+  color: lightblue;
+}
+
+header {
+  background-color: #052F5F;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #F1A208;
+}
+header nav {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a, header nav p {
+  color: #fff;
+}
+header nav .logoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logoDiv #logoName {
+  background-color: #FFC857;
+  min-width: 65px;
+  min-height: 55px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #052F5F;
+  font-size: 24px;
+  font-weight: bold;
+}
+header nav .logoDiv p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+header nav .links {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .links a {
+  font-weight: bold;
+}
+
+.index_heroSection {
+  width: 100%;
+  min-height: 240px;
+  background-color: #005377;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.index_heroSection .logoContainer {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.index_heroSection .logoContainer #logoHeader {
+  color: #FFC857 !important;
+}
+.index_heroSection .logoContainer {
+  font-weight: bold;
+}
+.index_heroSection .logoContainer .gameStudioLogo {
+  width: 400px;
+  height: 100px;
+}
+.index_heroSection p {
+  width: 70ch;
+  color: #fff;
+  font-size: 18px;
+}
+
+.index_teamSection {
+  min-height: 240px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+.index_teamSection a {
+  font-size: 18px;
+}
+.index_teamSection a:hover {
+  color: lightblue;
+}
+.index_teamSection h1 {
+  color: #052F5F;
+  font-weight: bolder;
+}
+.index_teamSection .middleDiv {
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+.index_teamSection .middleDiv .circleList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.index_teamSection .middleDiv .circle {
+  padding: 26px;
+  margin-top: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: black;
+}
+.index_teamSection .middleDiv .ben_bColor {
+  background-color: #052F5F;
+}
+.index_teamSection .middleDiv .jacob_bColor {
+  background-color: #005377;
+}
+.index_teamSection .middleDiv .julian_bColor {
+  background-color: #06A77D;
+}
+.index_teamSection .middleDiv .jason_bColor {
+  background-color: #F1A208;
+}
+.index_teamSection .middleDiv .line {
+  position: absolute;
+  border-bottom: 5px #052F5F dotted;
+  height: 100px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.index_teamSection .teamCardsDiv {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  border-bottom: 4px solid #005377;
+}
+.index_teamSection .teamCardsDiv .teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamImg {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border-radius: 15px;
+  border: 1px solid black;
+  color: #fff;
+}
+.index_teamSection .teamCardsDiv .teamCard .ben_bColor {
+  background-color: #052F5F;
+}
+.index_teamSection .teamCardsDiv .teamCard .jacob_bColor {
+  background-color: #005377;
+}
+.index_teamSection .teamCardsDiv .teamCard .julian_bColor {
+  background-color: #06A77D;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent h2, .index_teamSection .teamCardsDiv .teamCard .teamContent h4 {
+  margin: 0px;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent h4 {
+  margin-bottom: 8px;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent p {
+  width: 30ch;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent .role {
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.index_progressSection {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  border-bottom: transparent !important;
+}
+.index_progressSection .progressSectionHeader {
+  display: flex;
+  align-items: center;
+}
+.index_progressSection .progressSectionHeader p {
+  margin-right: 15px;
+  color: #052F5F;
+  font-weight: bold;
+  font-size: 45px;
+}
+.index_progressSection .progressSectionHeader .wayfarerGameLogo {
+  width: 455px;
+  margin-bottom: 20px;
+}
+.index_progressSection .phasesDiv {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.index_progressSection .phasesDiv .phasesDivHeader {
+  color: #052F5F;
+  font-weight: bold;
+  font-size: 30px;
+}
+.index_progressSection .phasesDiv p {
+  margin: 0;
+  width: 50ch;
+}
+.index_progressSection .progressBarCardsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard {
+  width: 400px;
+  min-height: 150px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard h2 {
+  margin-top: 25px;
+  color: #052F5F;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state {
+  display: flex;
+  align-items: center;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader {
+  width: fit-content;
+  margin-top: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv {
+  width: 100px;
+  height: fit-content;
+  margin-top: 15px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #052F5F;
+  border-radius: 10px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #052F5F;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder.current {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar {
+  height: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar.current {
+  width: 15%;
+  background-color: #F1A208;
+}
+.index_progressSection .progressBarCardsDiv .progressBarCard p {
+  width: 50ch;
+}
+.index_progressSection .progressCardsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.index_progressSection .progressCardsDiv .finished_border-color {
+  border-top: 5px solid #06A77D !important;
+}
+.index_progressSection .progressCardsDiv .now_border-color {
+  border-top: 5px solid #F1A208 !important;
+}
+.index_progressSection .progressCardsDiv .next_border-color {
+  border-top: 5px solid #052F5F !important;
+}
+.index_progressSection .progressCardsDiv .later_border-color {
+  border-top: 5px solid gray !important;
+}
+.index_progressSection .progressCardsDiv .progressCard {
+  width: 400px;
+}
+.index_progressSection .progressCardsDiv .progressCard h2 {
+  margin: 0;
+  margin-top: 10px;
+}
+.index_progressSection .progressCardsDiv .progressCard p {
+  width: 50ch;
+  margin: 0;
+}
+.index_progressSection .progressCardsDiv .progressCard .progressCardContent {
+  margin-top: 30px;
+}
+.index_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem {
+  border-bottom: 1px solid #052F5F;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.index_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
+  margin: 0;
+}
+
+.project_progressSection {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+.project_progressSection .progressSectionHeader {
+  display: flex;
+  align-items: center;
+}
+.project_progressSection .progressSectionHeader p {
+  margin-right: 15px;
+  color: #052F5F;
+  font-weight: bold;
+  font-size: 45px;
+}
+.project_progressSection .progressSectionHeader .wayfarerGameLogo {
+  width: 455px;
+  margin-bottom: 20px;
+}
+.project_progressSection .phasesDiv {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.project_progressSection .phasesDiv .phasesDivHeader {
+  color: #052F5F;
+  font-weight: bold;
+  font-size: 30px;
+}
+.project_progressSection .phasesDiv p {
+  margin: 0;
+  width: 50ch;
+}
+.project_progressSection .progressBarCardsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard {
+  width: 400px;
+  min-height: 150px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard h2 {
+  margin-top: 25px;
+  color: #052F5F;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state {
+  display: flex;
+  align-items: center;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader {
+  width: fit-content;
+  margin-top: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv {
+  width: 95px;
+  height: fit-content;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #052F5F;
+  border-radius: 10px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #052F5F;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder.current {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar {
+  height: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar.current {
+  width: 15%;
+  background-color: #F1A208;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard p {
+  width: 50ch;
+}
+.project_progressSection .progressCardsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  border-bottom: 4px solid #005377;
+}
+.project_progressSection .progressCardsDiv .finished_border-color {
+  border-top: 5px solid #06A77D !important;
+}
+.project_progressSection .progressCardsDiv .now_border-color {
+  border-top: 5px solid #F1A208 !important;
+}
+.project_progressSection .progressCardsDiv .next_border-color {
+  border-top: 5px solid #052F5F !important;
+}
+.project_progressSection .progressCardsDiv .later_border-color {
+  border-top: 5px solid gray !important;
+}
+.project_progressSection .progressCardsDiv .progressCard {
+  width: 400px;
+}
+.project_progressSection .progressCardsDiv .progressCard h2 {
+  margin: 0;
+  margin-top: 10px;
+}
+.project_progressSection .progressCardsDiv .progressCard p {
+  width: 50ch;
+  margin: 0;
+}
+.project_progressSection .progressCardsDiv .progressCard .progressCardContent {
+  margin-top: 30px;
+}
+.project_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem {
+  border-bottom: 1px solid #052F5F;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.project_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
+  margin: 0;
+}
+
+.projectUpdatesSection {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.projectUpdatesSection h1 {
+  color: #052F5F;
+}
+.projectUpdatesSection .progressUpdatesDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.projectUpdatesSection .progressUpdatesDiv .progressUpdateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateImg {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: lightgreen;
+}
+.projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateContent {
+  width: 295px;
+}
+.projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateContent .progressUpdateDate {
+  margin: 0;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  color: #005377;
+}
+.projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateContent h3 {
+  color: #052F5F;
+}
+
+.team_teamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid black;
+}
+.team_teamSection h1 {
+  margin-bottom: 40px;
+}
+.team_teamSection .teamMembersDiv {
+  width: 1000px;
+  margin-bottom: 40px;
+}
+.team_teamSection .teamMembersDiv .teamMember {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmLeft {
+  width: 200px;
+  height: 200px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight {
+  width: 600px;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight .teamMem_name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight .role {
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight .memberSocialLinks {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight .memberSocialLinks .link {
+  display: flex;
+}
+.team_teamSection .teamMembersDiv .teamMember .tmRight .memberSocialLinks .link .socialLinkImg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: orchid;
+}
+
+.team_studioSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team_studioSection img {
+  width: 250px;
+}
+.team_studioSection p {
+  width: 100ch;
+}
+.team_studioSection h1 {
+  color: #052F5F;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #052F5F;
+  border-top: 4px solid #F1A208;
+}
+
+.footerLeftSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.footerLeftSection .footer_studioLogo {
+  width: 250px;
+  height: 150px;
+  background-image: url("../images/studioLogo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.footerRightSection {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.footerRightSection .footerRightContent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  gap: 100px;
+}
+.footerRightSection .footerRightContent .socialsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsHeader p {
+  color: #F1A208;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #005377;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink {
+  display: flex;
+  color: #F9F9F4;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink .xIcon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../icons/twitter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink .blueSkyIcon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../icons/bluesky-black-square-logo-24459_64.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink .instagramIcon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../icons/instagram.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink p {
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.footerRightSection .footerRightContent .copyRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerRightSection .footerRightContent .copyRightContainer .copyrightHeader p {
+  color: #F1A208;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #005377;
+}
+.footerRightSection .footerRightContent .copyRightContainer .copyRightList {
+  display: flex;
+  flex-direction: column;
+}
+.footerRightSection .footerRightContent .copyRightContainer .copyRightList a {
+  color: #F9F9F4;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.footerRightSection .footerRightContent .copyRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerRightSection .footerRightContent .copyRightContainer .pageLinkHeader p {
+  color: #F1A208;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #005377;
+}
+.footerRightSection .footerRightContent .copyRightContainer .pageLinksList {
+  display: flex;
+  flex-direction: column;
+}
+.footerRightSection .footerRightContent .copyRightContainer .pageLinksList a {
+  color: #F9F9F4;
+  margin-bottom: 30px;
+}
+.footerRightSection .footerRightContent .copyRightContainer .pageLinksList a:hover {
+  text-decoration: underline;
+}

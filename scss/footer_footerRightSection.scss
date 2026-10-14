@@ -1,0 +1,173 @@
+.footerRightSection
+{
+    // background-color: blue;
+    width:50%;
+    // height:100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top:15px;
+
+    .footerRightContent
+    {
+        // background-color: red;
+        width:100%;
+
+        display:flex;
+        justify-content: flex-end;
+        
+        padding-top:15px;
+        gap:100px;
+
+        .socialsContainer
+        {
+            display: flex;
+            flex-direction: column;
+
+
+            .socialsHeader
+            {
+
+                p
+                {
+                    color: #F1A208;
+                    font-weight: bold;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid #005377;
+                }
+            }
+
+            .socialsList
+            {
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+
+                .socialLink
+                {
+                    display: flex;
+                    color:#F9F9F4;
+
+                    .xIcon
+                    {
+                        width: 30px;
+                        height: 30px;
+
+                        background-image: url("../icons/twitter.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+
+                    }
+
+                    .blueSkyIcon
+                    {
+                        width: 30px;
+                        height: 30px;
+
+                        background-image: url("../icons/bluesky-black-square-logo-24459_64.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+
+                    .instagramIcon
+                    {
+                        width: 30px;
+                        height: 30px;
+
+                        background-image: url("../icons/instagram.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+
+                    p
+                    {
+                        text-align: center;
+                        margin-top: 5px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .copyRightContainer
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // margin-top:25px;
+
+            .copyrightHeader
+            {
+                p
+                {
+                    color: #F1A208;
+                    font-weight: bold;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid #005377;
+                }
+            }
+
+            .copyRightList
+            {
+                display:flex;
+                flex-direction: column;
+
+                a
+                {
+                    color:#F9F9F4;
+                    
+                    margin-bottom:30px;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .copyRightContainer
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // margin-top:25px;
+
+            .pageLinkHeader
+            {
+                p
+                {
+                    color: #F1A208;
+                    font-weight: bold;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid #005377;
+                }
+            }
+
+            .pageLinksList
+            {
+                display:flex;
+                flex-direction: column;
+
+                a
+                {
+                    color:#F9F9F4;
+                    
+                    margin-bottom:30px;
+                }
+
+                a:hover
+                {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
