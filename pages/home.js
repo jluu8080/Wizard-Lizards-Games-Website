@@ -3,7 +3,7 @@ export default
 <section class="index_heroSection">
     <div class="logoContainer">
         <p id="logoHeader">⎯ BOARD GAME STUDIO ⎯</p>
-        <img src="images/studioLogo1.png" class="gameStudioLogo">
+        <img src="images/studioLogo_Transparent_White.webp" class="gameStudioLogo">
     </div>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus deserunt adipisci. Earum vel facilis quaerat eligendi aperiam illo natus corporis unde corrupti, deleniti perferendis, animi, recusandae voluptatibus explicabo error.</p>
