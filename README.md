@@ -1,4 +1,4 @@
-# Wayfarer
+#  B&J³ Studio Website
 
 Website for B&J³ Games.
 
