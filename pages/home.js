@@ -1,12 +1,22 @@
+/*
+    <--
+    <img src="images/studioLogo_Transparent_White.webp" class="gameStudioLogo">
+    !-->
+
+    Logo Container Code
+*/
+
+
 export default 
 `
 <section class="index_heroSection">
     <div class="logoContainer">
         <p id="logoHeader">⎯ BOARD GAME STUDIO ⎯</p>
-        <img src="images/studioLogo_Transparent_White.webp" class="gameStudioLogo">
+
+        <div class="gameStudioLogo"></div>
     </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus deserunt adipisci. Earum vel facilis quaerat eligendi aperiam illo natus corporis unde corrupti, deleniti perferendis, animi, recusandae voluptatibus explicabo error.</p>
+    <p class="heroContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus deserunt adipisci. Earum vel facilis quaerat eligendi aperiam illo natus corporis unde corrupti, deleniti perferendis, animi, recusandae voluptatibus explicabo error.</p>
 
     
 </section>
@@ -15,7 +25,7 @@ export default
 <section class="index_teamSection">
     <div class="header">
         <h1>Meet The Team</h1>
-        <a href="#teams">Learn More →</a>
+        <a href="#team">Learn More →</a>
     </div>
 
 
@@ -37,7 +47,11 @@ export default
             <div class="teamContent">
                 <h2>Ben Fox</h2>
 
-                <p class="role ben_textColor">PRESIDENT</p>
+                <div class="rolesContainer">
+                    <p class="mainRole ben_textColor">PRESIDENT</p>
+
+                    <p class="subRoles">Game Designer • Game Writer • Play Tester</p>
+                </div>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
             </div>
@@ -49,8 +63,13 @@ export default
             <div class="teamContent">
                 <h2>Jacob Fox</h2>
 
-                <p class="role jacob_textColor">GAME DESIGNER</p>
-                
+                <div class="rolesContainer">
+                    <p class="mainRole jacob_textColor">GAME DESIGNER</p>
+
+                    <p class="subRoles">Game Writer • Play Tester</p>
+                </div>
+
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
             </div>
         </div>
@@ -61,7 +80,11 @@ export default
             <div class="teamContent">
                 <h2>Julian Banks</h2>
 
-                <p class="role julian_textColor">GAME DESIGNER</p>
+                <div class="rolesContainer">
+                    <p class="mainRole julian_textColor">GAME DESIGNER</p>
+
+                    <p class="subRoles">Game Writer • Play Tester • Marketer</p>
+                </div>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
             </div>
@@ -73,7 +96,12 @@ export default
             <div class="teamContent">
                 <h2>Jason Luu</h2>
 
-                <p class="role jason_textColor">PROGRAMMER</p>
+                <div class="rolesContainer">
+                    <p class="mainRole jason_textColor">PROGRAMMER</p>
+
+                    <p class="subRoles">UI/UX Designer • Game Designer • <br>Play Tester • Marketer</p>
+                </div>
+
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
             </div>
@@ -86,6 +114,7 @@ export default
         
         <div class="progressSectionHeader">
             <p>Current Project:</p>
+            
             <img src="images/WayfarerStainedLogosvg.svg" class="wayfarerGameLogo">
         </div>
         
@@ -98,137 +127,78 @@ export default
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur ducimus explicabo ea velit atque perspiciatis ratione dignissimos beatae vel ipsa suscipit nisi molestiae eum porro nulla tempora omnis enim?</p>
     </div>
 
-    <h1>Our Progress</h1>
+    <h1>Our Progress:</h1>
 
-    <div class="progressBarCardsDiv">
+    <div class="progress_BarCardsContainer">
 
-        <div class="progressBarCard">
+        <div class="progress_barCard">
 
-            <div class="progressBarHolder current">
-                <div class="progressBar current"></div>
+            <div class="progressTrack isActive">
+                <div class="progressFill isCompleted"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Alpha Build</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Alpha Build</p>
+
+                <div class="state finished">
+                    <p>FINISHED</p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack isActive">
+                <div class="progressFill isActive"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Redacted</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Beta Build</p>
 
-                <div class="stateDiv">
-                    <p>Current</p>
+                <div class="state current">
+                    <p>CURRENT</p>
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack">
+                <div class="progressFill"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Redacted</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Redacted</p>
+
+                <div class="state future">
+                    <p>UP NEXT</p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack">
+                <div class="progressFill"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Launch</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Launch</p>
+
+                <div class="state">
+                    <p></p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
         </div>
 
-    </div>
-
-    <div class="progressCardsDiv">
-        <div class="progressCard finished_border-color">
-            <h2>Finished</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard now_border-color">
-            <h2>Now</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard next_border-color">
-            <h2>Next</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard later_border-color">
-            <h2>Later</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 `;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins-regular;
 }
 
 html, body {
@@ -57,12 +58,21 @@ section {
   color: lightblue;
 }
 
+@font-face {
+  font-family: poppins-regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
 header {
   background-color: #052F5F;
-  width: 100%;
-  height: 80px;
+  max-width: 100%;
+  min-height: 80px;
   display: flex;
   justify-content: center;
+  flex: 1;
   border-bottom: 4px solid #F1A208;
 }
 header nav {
@@ -73,8 +83,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav a, header nav p {
+header nav a {
   color: #fff;
+  letter-spacing: 3px;
 }
 header nav .logoDiv {
   display: flex;
@@ -82,15 +93,9 @@ header nav .logoDiv {
   align-items: center;
 }
 header nav .logoDiv #logoName {
-  background-color: #FFC857;
-  min-width: 65px;
-  min-height: 55px;
-  border-radius: 4px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #052F5F;
   font-size: 24px;
   font-weight: bold;
 }
@@ -102,15 +107,38 @@ header nav .logoDiv p {
   text-align: center;
 }
 header nav .links {
-  width: 200px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 25px;
 }
 header nav .links a {
-  font-weight: bold;
+  font-family: poppins-bold;
+}
+header nav .links a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
+@media (max-width: 767px) {
+  header {
+    align-items: flex-start;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px !important;
+    padding-left: 25px !important;
+  }
+}
+@media (max-width: 1024px) {
+  header nav {
+    padding: 0px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
 .index_heroSection {
   width: 100%;
   min-height: 240px;
@@ -121,22 +149,28 @@ header nav .links a {
   padding-bottom: 50px;
 }
 .index_heroSection .logoContainer {
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 .index_heroSection .logoContainer #logoHeader {
   color: #FFC857 !important;
+  letter-spacing: 3px;
 }
 .index_heroSection .logoContainer {
   font-weight: bold;
 }
 .index_heroSection .logoContainer .gameStudioLogo {
   width: 400px;
-  height: 100px;
+  height: 150px;
+  background-image: url("../images/studioLogo_wizardsLizards.webp");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.index_heroSection p {
+.index_heroSection .heroContent {
   width: 70ch;
   color: #fff;
   font-size: 18px;
@@ -190,9 +224,10 @@ header nav .links a {
   background-color: #F1A208;
 }
 .index_teamSection .middleDiv .line {
+  top: 40px;
   position: absolute;
   border-bottom: 5px #052F5F dotted;
-  height: 100px;
+  height: 25px;
   width: 100%;
   transform: translateY(-50%);
 }
@@ -203,6 +238,8 @@ header nav .links a {
   border-bottom: 4px solid #005377;
 }
 .index_teamSection .teamCardsDiv .teamCard {
+  width: 300px;
+  min-height: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,6 +255,7 @@ header nav .links a {
   border-radius: 15px;
   border: 1px solid black;
   color: #fff;
+  flex-shrink: 0;
 }
 .index_teamSection .teamCardsDiv .teamCard .ben_bColor {
   background-color: #052F5F;
@@ -228,6 +266,11 @@ header nav .links a {
 .index_teamSection .teamCardsDiv .teamCard .julian_bColor {
   background-color: #06A77D;
 }
+.index_teamSection .teamCardsDiv .teamCard .teamContent {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .index_teamSection .teamCardsDiv .teamCard .teamContent h2, .index_teamSection .teamCardsDiv .teamCard .teamContent h4 {
   margin: 0px;
 }
@@ -237,10 +280,21 @@ header nav .links a {
 .index_teamSection .teamCardsDiv .teamCard .teamContent p {
   width: 30ch;
 }
-.index_teamSection .teamCardsDiv .teamCard .teamContent .role {
-  margin-top: 5px;
-  font-size: 14px;
+.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer .mainRole {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
   letter-spacing: 2px;
+}
+.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer .subRoles {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
 }
 
 .index_progressSection {
@@ -277,109 +331,112 @@ header nav .links a {
   margin: 0;
   width: 50ch;
 }
-.index_progressSection .progressBarCardsDiv {
+.index_progressSection .progress_BarCardsContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   margin-bottom: 40px;
+  padding-left: 6px;
 }
-.index_progressSection .progressBarCardsDiv .progressBarCard {
-  width: 400px;
-  min-height: 150px;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard h2 {
-  margin-top: 25px;
-  color: #052F5F;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state {
-  display: flex;
-  align-items: center;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader {
-  width: fit-content;
-  margin-top: 25px;
-  font-size: 32px;
-  font-weight: bold;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv {
-  width: 100px;
-  height: fit-content;
-  margin-top: 15px;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border: 2px solid #052F5F;
-  border-radius: 10px;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder {
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack {
   width: 100%;
   height: 20px;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: #052F5F;
 }
-.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder.current {
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack.isActive {
   outline: 2px solid black;
   outline-offset: 2px;
 }
-.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar {
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill {
   height: 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.index_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar.current {
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill.isActive {
   width: 15%;
   background-color: #F1A208;
 }
-.index_progressSection .progressBarCardsDiv .progressBarCard p {
-  width: 50ch;
-}
-.index_progressSection .progressCardsDiv {
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill.isCompleted {
   width: 100%;
+  background-color: #06A77D;
+  border-radius: 5px !important;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .header {
+  font-size: 22px;
+  font-family: poppins-bold !important;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state {
+  height: 25px;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.current {
+  background-color: #F1A208;
+  color: #FFF;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.finished {
+  background-color: #06A77D;
+  color: #FFF;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.future {
+  background-color: #989898;
+  color: #fff;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.index_progressSection .progress_StateCardsDiv {
   display: flex;
   justify-content: space-between;
 }
-.index_progressSection .progressCardsDiv .finished_border-color {
+.index_progressSection .progress_StateCardsDiv .finished_border-color {
   border-top: 5px solid #06A77D !important;
 }
-.index_progressSection .progressCardsDiv .now_border-color {
+.index_progressSection .progress_StateCardsDiv .now_border-color {
   border-top: 5px solid #F1A208 !important;
 }
-.index_progressSection .progressCardsDiv .next_border-color {
+.index_progressSection .progress_StateCardsDiv .next_border-color {
   border-top: 5px solid #052F5F !important;
 }
-.index_progressSection .progressCardsDiv .later_border-color {
+.index_progressSection .progress_StateCardsDiv .later_border-color {
   border-top: 5px solid gray !important;
 }
-.index_progressSection .progressCardsDiv .progressCard {
+.index_progressSection .progress_StateCardsDiv .progressCard {
   width: 400px;
 }
-.index_progressSection .progressCardsDiv .progressCard h2 {
+.index_progressSection .progress_StateCardsDiv .progressCard h2 {
   margin: 0;
   margin-top: 10px;
 }
-.index_progressSection .progressCardsDiv .progressCard p {
+.index_progressSection .progress_StateCardsDiv .progressCard p {
   width: 50ch;
   margin: 0;
 }
-.index_progressSection .progressCardsDiv .progressCard .progressCardContent {
+.index_progressSection .progress_StateCardsDiv .progressCard .progressCardContent {
   margin-top: 30px;
 }
-.index_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem {
+.index_progressSection .progress_StateCardsDiv .progressCard .progressCardContent .progressCardItem {
   border-bottom: 1px solid #052F5F;
   padding-bottom: 20px;
   margin-top: 10px;
 }
-.index_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
+.index_progressSection .progress_StateCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
   margin: 0;
 }
 
@@ -646,6 +703,7 @@ header nav .links a {
 footer {
   width: 100%;
   display: flex;
+  padding-top: 10px;
   padding-right: 100px;
   padding-left: 100px;
   background-color: #052F5F;
@@ -653,25 +711,29 @@ footer {
 }
 
 .footerLeftSection {
-  width: 50%;
+  background-color: red;
+  width: 25%;
   display: flex;
   align-items: center;
 }
 .footerLeftSection .footer_studioLogo {
   width: 250px;
   height: 150px;
-  background-image: url("../images/studioLogo_Transparent_White.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .footerRightSection {
-  width: 50%;
+  background-color: blue;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+}
+.footerRightSection a:hover {
+  text-decoration: underline;
+  text-decoration-color: #F9F9F4;
 }
 .footerRightSection .footerRightContent {
   width: 100%;
@@ -730,7 +792,6 @@ footer {
 .footerRightSection .footerRightContent .copyRightContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .footerRightSection .footerRightContent .copyRightContainer .copyrightHeader p {
   color: #F1A208;
@@ -749,12 +810,11 @@ footer {
   margin-bottom: 30px;
   text-decoration: underline;
 }
-.footerRightSection .footerRightContent .copyRightContainer {
+.footerRightSection .footerRightContent .pagesContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.footerRightSection .footerRightContent .copyRightContainer .pageLinkHeader p {
+.footerRightSection .footerRightContent .pagesContainer .pageLinkHeader p {
   color: #F1A208;
   font-weight: bold;
   font-size: 16px;
@@ -762,14 +822,11 @@ footer {
   padding-bottom: 10px;
   border-bottom: 3px solid #005377;
 }
-.footerRightSection .footerRightContent .copyRightContainer .pageLinksList {
+.footerRightSection .footerRightContent .pagesContainer .pageLinksList {
   display: flex;
   flex-direction: column;
 }
-.footerRightSection .footerRightContent .copyRightContainer .pageLinksList a {
+.footerRightSection .footerRightContent .pagesContainer .pageLinksList a {
   color: #F9F9F4;
   margin-bottom: 30px;
-}
-.footerRightSection .footerRightContent .copyRightContainer .pageLinksList a:hover {
-  text-decoration: underline;
 }

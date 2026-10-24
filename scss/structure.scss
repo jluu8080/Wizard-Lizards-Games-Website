@@ -2,6 +2,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ font-family: poppins-regular;
 }
 html, body {
  height: 100%
@@ -75,4 +76,14 @@ section
             color:lightblue;
         }
     }
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url("../fonts/Poppins-Bold.ttf");
 }

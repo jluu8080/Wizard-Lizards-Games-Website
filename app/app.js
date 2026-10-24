@@ -7,6 +7,7 @@ function changeRoute()
 
     console.log(pageID);
     loadPage(pageID);
+    window.scroll(0,0);
 }
 
 
@@ -16,4 +17,4 @@ function initApp()
     window.addEventListener("hashchange", changeRoute);
 }
 
-initApp();
+// initApp();
